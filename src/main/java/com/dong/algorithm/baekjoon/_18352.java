@@ -31,9 +31,7 @@ public class _18352 {
 
         int[] cityDistinctArray = new int[cityCount + 1];
         List<List<Integer>> metrix = new ArrayList<>();
-        IntStream.range(0, cityCount + 1).forEach((i) -> {
-            metrix.add(new ArrayList<>());
-        });
+        IntStream.range(0, cityCount + 1).forEach((i) -> metrix.add(new ArrayList<>()));
 
         for (int i = 0; i < nodeCount; i++) {
             String[] startAndEnd = br.readLine().split(" ");
